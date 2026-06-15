@@ -1,0 +1,101 @@
+{
+  "geode": "5.7.1",
+  "gd": "2.2081",
+  "id": "yourname.offlinelevelsaver",
+  "name": "Offline Level Saver",
+  "version": "v3.0.0",
+  "developer": "Geo",
+  "description": "Сохраняет онлайн-уровни и все рекорды для офлайн игры. Created by Geo",
+  "tags": [
+    "utility",
+    "offline",
+    "levels"
+  ],
+  "settings": {
+    "auto-save": {
+      "name": "Авто-сохранение уровней",
+      "type": "bool",
+      "default": true
+    },
+    "save-records": {
+      "name": "Сохранять рекорды",
+      "description": "Процент, попытки, джампы",
+      "type": "bool",
+      "default": true
+    },
+    "save-coins": {
+      "name": "Сохранять монеты",
+      "type": "bool",
+      "default": true
+    },
+    "save-practice": {
+      "name": "Сохранять практику",
+      "type": "bool",
+      "default": true
+    },
+    "record-notify": {
+      "name": "Уведомление о новом рекорде",
+      "type": "bool",
+      "default": true
+    },
+    "restore-notify": {
+      "name": "Уведомление о восстановлении",
+      "type": "bool",
+      "default": true
+    },
+    "show-badge": {
+      "name": "Бейдж Saved",
+      "type": "bool",
+      "default": true
+    },
+    "cloud-backup": {
+      "name": "Резервная копия .gmd",
+      "type": "bool",
+      "default": false
+    },
+    "max-saved-levels": {
+      "name": "Лимит сохраненных",
+      "type": "int",
+      "default": 0,
+      "min": 0,
+      "max": 9999
+    },
+    "export-format": {
+      "name": "Формат экспорта",
+      "type": "string",
+      "default": "gmd",
+      "one-of": [
+        "gmd",
+        "json"
+      ]
+    }
+  },
+  "resources": {
+    "spritesheets": {
+      "ols_ss": [
+        "resources/backup-icon.png",
+        "resources/banner.png",
+        "resources/check-icon.png",
+        "resources/cloud-icon.png",
+        "resources/delete-btn.png",
+        "resources/export-btn.png",
+        "resources/folder-icon.png",
+        "resources/heart-icon.png",
+        "resources/import-btn.png",
+        "resources/info-icon.png",
+        "resources/play-icon.png",
+        "resources/preview.png",
+        "resources/refresh-btn.png",
+        "resources/save-btn-on.png",
+        "resources/save-btn.png",
+        "resources/search-icon.png",
+        "resources/settings-icon.png",
+        "resources/star-icon.png",
+        "resources/stats-icon.png",
+        "resources/trash-icon.png",
+        "resources/trophy-icon.png",
+        "resources/warning-icon.png"
+      ]
+    }
+  }
+}

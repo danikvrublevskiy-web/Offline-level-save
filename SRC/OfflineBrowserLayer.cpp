@@ -1,2 +1,0 @@
-#include "OfflineManager.hpp"
-class OfflineBrowser : public geode::Popup<> { protected: bool setup() override { this->setTitle("Offline Saved - Created by Geo"); auto list = ols::Manager::getAll(); auto label = CCLabelBMFont::create(fmt::format("Сохранено: {}", list.size()).c_str(), "bigFont.fnt"); label->setPosition({170,120}); m_mainLayer->addChild(label); return true; } public: static OfflineBrowser* create(){ auto ret=new OfflineBrowser(); if(ret->initAnchored(340,240)){ret->autorelease(); return ret;} delete ret; return nullptr;} };
